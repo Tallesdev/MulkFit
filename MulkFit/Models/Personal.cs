@@ -2,9 +2,11 @@
 {
     public class Personal
     {
-        int PersonalID { get; set; }
-        string NomePersonal { get; set; }
-        string Especialidade { get; set; }
+        public int PersonalID { get; set; }
+        public string NomePersonal { get; set; }
+        public string Especialidade { get; set; }
+
+        public ICollection<Aluno> alunos { get; set; }
     }
 }
 //(PersonalID, NomePersonal, Especialidade)

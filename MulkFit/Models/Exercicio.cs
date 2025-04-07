@@ -4,10 +4,12 @@ namespace MulkFit.Models
 {
     public class Exercicio
     {
-        int ExercicioID{get; set;}
-        string NomeExercicio { get; set; }
-        string CategoriaExercicio { get; set; }
-        string DescricaoExercicio { get; set; }
+        public int ExercicioID {get; set;}
+        public string NomeExercicio { get; set; }
+        public string CategoriaExercicio { get; set; }
+        public string DescricaoExercicio { get; set; }
+
+        public ICollection<Treino> treinoss { get; set; }
     }
 }
 // (ExercicioID, NomeExercicio, CategoriaExercicio, DescricaoExercicio

@@ -2,13 +2,15 @@
 {
     public class Treino
     {
-        int TreinoID { get; set; }
-        int PersonalID { get; set; }
-        int AlunoID {get; set;}
-        string CategoriaTreino { get; set; }
-        DateTime Data { get; set; }
-        DateTime Hora { get; set; }
+        public int TreinoID { get; set; }
+        public int PersonalID { get; set; }
+        public int AlunoID {get; set;}
+        public string NomeTreino { get; set; }
+        public string CategoriaTreino { get; set; }
+        public DateTime Data { get; set; }
+        public DateTime Hora { get; set; }
 
+        public ICollection<Exercicio> exercicios { get; set; }
     }
 }
-//(TreinoID, PersonalID, AlunoID, CategoriaTreino, Data, Hora)
+//(TreinoID, PersonalID, AlunoID, NomeTreino, CategoriaTreino, Data, Hora)
